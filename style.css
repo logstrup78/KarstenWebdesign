@@ -1,0 +1,25 @@
+body{
+    background-color: #f9f9f9;
+}
+h1{
+    color: #181816;
+}
+/* Presentation */
+.profile-img{
+    display: block;
+    margin: 4% auto 5% auto;
+    border-radius: 100%;
+}
+.title-name{
+    text-align: center;
+    font-family:'Kalam',cursive;
+    font-weight: bold;
+    font-size: 80px;
+    padding-top: 4%;
+    
+}
+.title-under{
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    
+}
