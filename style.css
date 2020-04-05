@@ -7,19 +7,31 @@ h1{
 /* Presentation */
 .profile-img{
     display: block;
-    margin: 4% auto 5% auto;
+    margin: 3% auto 4% auto;
     border-radius: 100%;
 }
 .title-name{
     text-align: center;
     font-family:'Kalam',cursive;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 70px;
     padding-top: 4%;
     
 }
 .title-under{
     text-align: center;
     font-family: 'Roboto',sans-serif;
+    padding-bottom: 3%;
     
+}
+.contact-btn{
+    margin: auto;
+    width: 15rem;
+    background-color: #b2b0ad;
+    font-size: 25px;
+    font-family: 'Roboto',sans-serif;
+    
+}
+.contact-btn:hover{
+    background-color: #EF2D2D;
 }
