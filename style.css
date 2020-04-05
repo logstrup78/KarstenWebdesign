@@ -1,10 +1,24 @@
 body{
     background-color: #f9f9f9;
+    padding-top: 2%;
 }
 h1{
     color: #181816;
 }
 /* Presentation */
+.nav{
+    height: 35px;
+    padding-right: 2%;
+}
+.nav-item{
+    
+    padding-right: 1.5%;
+}
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .profile-img{
     display: block;
     margin: 3% auto 4% auto;
