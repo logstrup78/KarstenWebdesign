@@ -1,14 +1,31 @@
 body{
-    background-color: #f9f9f9;
     padding-top: 2%;
 }
 h1{
     color: #181816;
+
+}
+section{
+    width: 100%;
+    height: 800px;
+    float: left;
 }
 /* Presentation */
+#home{
+    background: url(images/Guitar.jpeg);
+    background-color: #f9f9f9;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .nav{
     height: 35px;
     padding-right: 2%;
+    
+}
+.active{
+    text-decoration: underline;
 }
 .nav-item{
     
@@ -16,6 +33,8 @@ h1{
 }
 .nav-link{
     font-family: 'Roboto', sans-serif;
+    color: #8685EF;
+    font-size: larger;
 }
 
 
@@ -48,4 +67,10 @@ h1{
 }
 .contact-btn:hover{
     background-color: #EF2D2D;
+}
+
+/* About */
+
+#about{
+    background-color: #8685EF;
 }
