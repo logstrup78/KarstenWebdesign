@@ -1,6 +1,10 @@
 h1{
     color: #181816;
 }
+h2{
+    font-family: 'Roboto',sans-serif;
+
+}
 section{
     width: 100%;
     height: 800px;
@@ -31,8 +35,11 @@ section{
 }
 .nav-link{
     font-family: 'Roboto', sans-serif;
-    color: rgb(235, 102, 102);
+    color: #2c2c2c;
     font-size: larger;
+}
+.nav-link:hover{
+    color: #EF2D2D;
 }
 
 .container-fluid{
@@ -42,7 +49,7 @@ section{
 }
 
 .title-name{
-    font-family: 'Merienda',cursive;
+    font-family: 'Luckiest Guy',cursive;
     font-weight: bold;
     font-size: 80px;
     padding-top: 15%;
@@ -54,6 +61,7 @@ section{
     display: block;
     font-family: 'Roboto',sans-serif;
     padding-bottom: 10%;
+    font-size: 2.5rem;
 }
 .contact-btn{
     width: 15rem;
@@ -72,6 +80,3 @@ section{
 
 /* About */
 
-#about{
-    background-color: #8685EF;
-}
