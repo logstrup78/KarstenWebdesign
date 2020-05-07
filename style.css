@@ -1,111 +1,133 @@
-h1{
+h1 {
     color: #3b3b3b;
+    margin-top: 2.5%;
 }
-h2{
+
+h2 {
     font-family: 'Roboto';
     font-size: 50px;
     margin-top: 5%;
 
 }
-section{
+
+section {
     width: 100%;
     height: 800px;
     float: left;
 }
+
 /* Presentation */
-#home{
+#home {
     background: url('images/Guitar.jpeg');
     background-size: cover;
     background-position: center;
     background-color: #f9f9f9;
-   }
+}
 
 /* navigation */
+ul {
+    list-style-type: none;
+    position: relative;
+}
 
-.nav{
-    height: 35px;
-    padding-right: 5%;
-    padding-top: 2%;
-    position; fixed: 
-    
+li {
+    float: left;
 }
-.active{
-    ;
-}
-.nav-item{
-    
-    padding-right: 1.5%;
-}
-.nav-link{
+
+li a {
+    color: rgb(238, 68, 68);
     font-family: 'Roboto', sans-serif;
-    color: #2c2c2c;
-    font-size: larger;
-}
-.nav-link:hover{
-    color: #EF2D2D;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 25px;
+    margin-top: 35px;;    
 }
 
-.container-fluid{
+a {
+    display: block;
+    padding: 8px;
+
+}
+
+.navbar {
+    background-color: transparent;
+    height: auto;
+    margin-right: 10%;
+    
+
+}
+
+
+
+
+/* presentation */
+.container-fluid {
     margin-left: 5%;
     width: 50%;
     text-align: center;
 }
 
-.title-name{
-    font-family: 'Luckiest Guy',cursive;
+
+.title-name {
+    font-family: 'Luckiest Guy', cursive;
     font-weight: bold;
     font-size: 80px;
-    padding-top: 15%;
+    padding-top: 5%;
     padding-left: 7%;
     padding-bottom: 7%;
     text-shadow: 2px 3px 3px #747474;
-    
+
 }
-.title-under{
+
+.title-under {
     display: block;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 10%;
     font-size: 2.5rem;
+    margin-top: 10px;
 }
-.contact-btn{
+
+.contact-btn {
     width: 15rem;
     background-color: rgb(238, 68, 68);
     font-size: 25px;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     position: relative;
     margin: auto;
-    box-shadow: 2px 2px 2px #b2b0ad;
-    border-radius: 35px;
+    box-shadow: 3px 3px 3px #b2b0ad;
+    border-radius: 25px;
 
 }
- 
 
-.contact-btn:hover{
+
+.contact-btn:hover {
     background-color: #b2b0ad;
 }
 
 /* About */
 
-#about{
+#about {
     background-color: #F9F9F7;
-   
+
 }
-#about p{
+
+#about p {
     color: rgb(238, 68, 68);
     font-family: 'Roboto', sans-serif;
     font-size: 27px;
     margin-top: 12%;
     line-height: 3rem;
     text-align: center;
-    
+
 }
 
 
-.about-p{
+.about-p {
     border-radius: 10px;
-    background-color: #f3f0f0
+    background-color: #f3f0f0;
 }
-.fas{
+
+.fas {
     font-size: 1rem;
 }
 
@@ -113,20 +135,22 @@ section{
 
 /* Portfolio */
 
-#portfolio{
+#portfolio {
     background-color: #f0f0f0;
-
-
 }
+
+.carousel-item img {
+    height: 550px;
+    margin-top: 5%;
+}
+
+
+
 
 /* Contact */
 
-#contact{
-    background-color: #f9f9f7 ;
+#contact {
+    background-color: #f9f9f7;
 }
 
 /* Footer */
-
-.footer{
-    
-}
