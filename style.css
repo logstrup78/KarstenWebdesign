@@ -40,7 +40,8 @@ li a {
     font-size: 1.5rem;
     font-weight: bolder;
     padding: 25px;
-    margin-top: 35px;;    
+    margin-top: 35px;
+    ;
 }
 
 a {
@@ -48,15 +49,22 @@ a {
     padding: 8px;
 
 }
+.navi{
+    display: flex;
+    flex-direction: row;
+}
 
 .navbar {
     background-color: transparent;
     height: auto;
     margin-right: 10%;
-    
-
 }
-
+.navLogo{
+    width: 40px;
+    height: auto;
+    border-radius: 100%;
+    
+}
 
 
 
@@ -102,6 +110,7 @@ a {
 
 .contact-btn:hover {
     background-color: #b2b0ad;
+
 }
 
 /* About */
