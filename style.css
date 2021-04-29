@@ -1,3 +1,13 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .h1_span {
     color: red;
 
@@ -19,6 +29,7 @@ h3{
 p{
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
+
 }
 
 .headline {
@@ -26,7 +37,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    margin-top: 10%;
 }
 
 .more_icon {
@@ -34,11 +45,12 @@ p{
     flex-direction: column;
     align-items: center;
     height: 100px;
-    
+    margin-top: 10%;
    
 }
 
 .bi {
+    
     font-size: 75px;
     animation: more_icon 2s;
     color: red;
@@ -55,26 +67,38 @@ p{
         transform: translateY(-12px);
     }
 }
+/*Hjem*/
 
-
-/*Ydelser*/
-
-#ydelser{
-    height: 100vh;
-    background-color: rgb(238, 238, 238);
+#hjem{
+    height: 80vh;
+    margin: 0 10%;    
+    background-color: rgb(255, 255, 255);
+    
 }
-#ydelser h2{
+
+/*portfolio*/
+
+#portfolio{
+    height: fit-content;
+    margin: 5% 10%;    
+    background-color: rgb(238, 238, 238, 0.4);
+    border-radius: 10px;
+    
+}
+
+#portfolio h2{
     text-align: center;
     padding-top: 30px;
 }
-#ydelser p{
-    margin: 4% 10%;
+#portfolio p{
+    margin: 4% 15%;
 }
 .card_container{
+    
     margin-top: 5%;
+    margin-bottom: 5%;
     padding-left: 7rem;
     padding-right: 7rem;
-    height: 25vh;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 30px;
@@ -100,4 +124,55 @@ p{
 .card_content{
     margin: 15px 10px;
     text-align: center;
+}
+
+
+/*om*/
+
+#om{
+    height: auto;
+    background-color: #fff;
+    margin: 0 10%;
+}
+
+#om h2{
+    text-align: center;
+    padding-top: 30px;
+}
+#om p{
+    margin: 4% 15%;
+}
+
+/*kontakt*/
+
+#kontakt{
+    height: auto;
+    margin: 0 10%;
+    margin-bottom: 5%;
+    background-color: rgb(238, 238, 238, 0.4);
+    border-radius: 10px;
+}
+
+#kontakt h2{
+    text-align: center;
+    padding-top: 30px;
+}
+
+#kontakt p{
+    margin: 4% 15%;
+}
+#kontakt ul{
+    list-style: none;
+    text-align: center;
+}
+#kontakt li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    text-align: start;
+}
+.kontakt_list{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
