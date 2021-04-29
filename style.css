@@ -6,10 +6,11 @@ body{
 a{
     cursor: pointer;
     text-decoration: none;
+    color: rgb(200, 0, 0);
 }
 
 .h1_span {
-    color: red;
+    color: rgb(200, 0, 0);
 
 }
 
@@ -24,7 +25,7 @@ h2 {
     font-size: 40px;
 }
 h3{
-    color: red;
+    color: rgb(200, 0, 0);
 }
 p{
     font-family: 'Open Sans', sans-serif;
@@ -53,7 +54,7 @@ p{
     
     font-size: 75px;
     animation: more_icon 2s;
-    color: red;
+    color: rgb(200, 0, 0);
 
 }
 @keyframes more_icon{
@@ -91,7 +92,7 @@ p{
     padding-top: 30px;
 }
 #portfolio p{
-    margin: 4% 15%;
+    margin: 4% 5%;
 }
 .card_container{
     
@@ -140,7 +141,7 @@ p{
     padding-top: 30px;
 }
 #om p{
-    margin: 4% 15%;
+    margin: 4% 5%;
 }
 
 /*kontakt*/
@@ -159,7 +160,7 @@ p{
 }
 
 #kontakt p{
-    margin: 4% 15%;
+    margin: 4% 5%;
 }
 #kontakt ul{
     list-style: none;
@@ -176,3 +177,46 @@ p{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/*hoppende ikon*/
+
+.bounce {
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 0.5s infinite linear;
+    -o-animation: bounce 0.5s infinite linear;
+    -webkit-animation: bounce 0.5s infinite linear;
+    animation: bounce 1s infinite linear;
+    colr:000;
+  }
+  
+  @-webkit-keyframes bounce {
+      0% { top: 0; }
+      50% { top: -0.2em; }
+      70% { top: -0.3em; }
+      100% { top: 0; }
+  }
+  @-moz-keyframes bounce {
+      0% { top: 0; }
+      50% { top: -0.2em; }
+      70% { top: -0.3em; }
+      100% { top: 0; }
+  }
+  @-o-keyframes bounce {
+      0% { top: 0; }
+      50% { top: -0.2em; }
+      70% { top: -0.3em; }
+      100% { top: 0; }
+  }
+  @-ms-keyframes bounce {
+      0% { top: 0; }
+      50% { top: -0.2em; }
+      70% { top: -0.3em; }
+      100% { top: 0; }
+  }
+  @keyframes bounce {
+      0% { top: 0; }
+      50% { top: -0.2em; }
+      70% { top: -0.3em; }
+      100% { top: 0; }
+  }
