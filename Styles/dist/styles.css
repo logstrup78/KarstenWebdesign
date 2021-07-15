@@ -1,11 +1,6 @@
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: white;
 }
 
@@ -39,12 +34,8 @@ p {
 
 button {
   background-color: #d97d0d;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d97d0d), color-stop(#e28f12), color-stop(#eaa122), color-stop(#f2b231), to(#f9c440));
-  background-image: linear-gradient(to bottom, #d97d0d, #e28f12, #eaa122, #f2b231, #f9c440);
   color: white;
-  border-radius: 17px;
-  -webkit-box-shadow: 0px 1px 4px -2px #333;
-          box-shadow: 0px 1px 4px -2px #333;
+  border-radius: 10%;
   border-style: none;
   font-size: 16px;
   text-decoration: none;
@@ -53,74 +44,38 @@ button {
 }
 
 .headline {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 10%;
 }
 
 .more_icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   height: 100px;
   margin-top: 10%;
 }
 
 .bi {
   font-size: 75px;
-  -webkit-animation: more_icon 2s;
-          animation: more_icon 2s;
+  animation: more_icon 2s;
   color: #d97d0d;
-}
-
-@-webkit-keyframes more_icon {
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-  60% {
-    -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
-  }
 }
 
 @keyframes more_icon {
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   40% {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    transform: translateY(-20px);
   }
   60% {
-    -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
+    transform: translateY(-12px);
   }
 }
-
 /*Hjem*/
 #hjem {
   height: 80vh;
@@ -130,8 +85,6 @@ button {
 
 /*portfolio*/
 #portfolio {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   margin: 5% 10% 10%;
   border-radius: 10px;
@@ -151,24 +104,15 @@ button {
   margin-bottom: 5%;
   padding-left: 7rem;
   padding-right: 7rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 30px;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  align-content: stretch;
+  justify-content: center;
+  align-items: end;
 }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #fff;
   height: 400px;
@@ -179,7 +123,7 @@ button {
 }
 
 .card_heading {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 30px;
   text-align: center;
   margin-top: 15px;
@@ -229,29 +173,21 @@ button {
 }
 
 #kontakt li {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 30px;
   text-align: start;
 }
 
 .kontakt_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .profile_div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .profile_img {
@@ -264,6 +200,8 @@ button {
 .bounce {
   display: inline-block;
   position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
   -webkit-animation: bounce 0.5s infinite linear;
   animation: bounce 1s infinite linear;
 }
@@ -282,7 +220,48 @@ button {
     top: 0;
   }
 }
-
+@-moz-keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-ms-keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
 @keyframes bounce {
   0% {
     top: 0;
@@ -297,7 +276,6 @@ button {
     top: 0;
   }
 }
-
 /*Til topppen knap*/
 #myBtn {
   display: none;
@@ -333,4 +311,3 @@ button {
   background-color: #7e7e7e;
   /* Add a dark-grey background on hover */
 }
-/*# sourceMappingURL=styles.css.map */

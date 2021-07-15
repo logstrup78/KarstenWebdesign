@@ -1,6 +1,6 @@
 //colors
 
-$primaryCol : rgb(217, 125, 13);
+$primaryCol : #d97d0d;
 $secondCol : rgb(255, 255, 255);
 $thirdCol : rgb(238, 238, 238);
 $fourthCol : rgb(161, 217, 41);
@@ -52,11 +52,17 @@ p {
 
 button{
     background-color: $primaryCol;
+    background-image: linear-gradient(to bottom, $primaryCol, #e28f12, #eaa122, #f2b231, #f9c440);
     color: $secondCol;
-    border-radius: 7%;
-    border-bottom-left-radius: 0;
+    border-radius: 17px;
+    box-shadow: 0px 1px 4px -2px #333;
     border-style: none;
-    font-size: 18px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 32px;
+    
+
 }
 
 .headline {
