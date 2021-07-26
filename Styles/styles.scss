@@ -64,6 +64,12 @@ button{
     
 
 }
+img {
+    width: 400px;
+    height:auto;
+    margin: 100px;
+    
+}
 
 .headline {
     display: flex;
@@ -156,6 +162,17 @@ button{
     .card_content{
     margin: 15px 10px;
     text-align: center;
+    }
+    .portfolio{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    .portfolio a{
+        text-decoration: none;
+        font-size: 20px;
+        color: $primaryCol;
     }
     
     /*om*/
