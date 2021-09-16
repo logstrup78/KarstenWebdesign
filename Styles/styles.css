@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,11 +12,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: white;
+  background-color: #fffdfd;
 }
 
 a {
   cursor: pointer;
+  color: #d97d0d;
 }
 
 .h1_span {
@@ -41,7 +48,7 @@ button {
   background-color: #d97d0d;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d97d0d), color-stop(#e28f12), color-stop(#eaa122), color-stop(#f2b231), to(#f9c440));
   background-image: linear-gradient(to bottom, #d97d0d, #e28f12, #eaa122, #f2b231, #f9c440);
-  color: white;
+  color: #fffdfd;
   border-radius: 17px;
   -webkit-box-shadow: 0px 1px 4px -2px #333;
           box-shadow: 0px 1px 4px -2px #333;
@@ -131,7 +138,7 @@ img {
 #hjem {
   height: 80vh;
   margin: 0 10%;
-  background-color: white;
+  background-color: #fffdfd;
 }
 
 /*portfolio*/

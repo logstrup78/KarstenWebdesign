@@ -1,7 +1,7 @@
 //colors
 
 $primaryCol : #d97d0d;
-$secondCol : rgb(255, 255, 255);
+$secondCol : rgb(255, 253, 253);
 $thirdCol : rgb(238, 238, 238);
 $fourthCol : rgb(161, 217, 41);
 $opacity : 0.3;
@@ -13,15 +13,24 @@ sans-serif;
 $headingfont : 'Merriweather',
 serif;
 
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+
+}
 
 body {
     display: flex;
     flex-direction: column;
     background-color: $secondCol;
+   
 }
 
 a {
     cursor: pointer;
+    color: $primaryCol;
 }
 
 .h1_span {

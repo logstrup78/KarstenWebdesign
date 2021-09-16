@@ -1,11 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #fffdfd;
 }
 
 a {
   cursor: pointer;
+  color: #d97d0d;
 }
 
 .h1_span {
@@ -34,13 +41,21 @@ p {
 
 button {
   background-color: #d97d0d;
-  color: white;
-  border-radius: 10%;
+  background-image: linear-gradient(to bottom, #d97d0d, #e28f12, #eaa122, #f2b231, #f9c440);
+  color: #fffdfd;
+  border-radius: 17px;
+  box-shadow: 0px 1px 4px -2px #333;
   border-style: none;
   font-size: 16px;
   text-decoration: none;
   text-align: center;
   padding: 15px 32px;
+}
+
+img {
+  width: 400px;
+  height: auto;
+  margin: 100px;
 }
 
 .headline {
@@ -80,7 +95,7 @@ button {
 #hjem {
   height: 80vh;
   margin: 0 10%;
-  background-color: white;
+  background-color: #fffdfd;
 }
 
 /*portfolio*/
@@ -132,6 +147,27 @@ button {
 .card_content {
   margin: 15px 10px;
   text-align: center;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.portfolio:hover {
+  transform: scale(1.2);
+}
+
+.portfolio a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #d97d0d;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
 }
 
 /*om*/
