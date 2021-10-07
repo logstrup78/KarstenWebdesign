@@ -242,7 +242,7 @@ img {
 #om {
   height: auto;
   background-color: #fff;
-  margin: 0 10% 10%;
+  margin: 0 10%;
 }
 
 #om h2 {
@@ -257,7 +257,7 @@ img {
 /*kontakt*/
 #kontakt {
   height: auto;
-  margin: 0 10%;
+  margin: 0 5%;
   margin-bottom: 5%;
   border-radius: 10px;
 }
@@ -278,7 +278,7 @@ img {
 
 #kontakt li {
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   text-align: start;
 }
 
