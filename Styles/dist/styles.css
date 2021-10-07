@@ -13,6 +13,7 @@ body {
 a {
   cursor: pointer;
   color: #d97d0d;
+  text-decoration: none;
 }
 
 .h1_span {
