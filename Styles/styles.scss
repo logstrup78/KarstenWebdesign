@@ -13,11 +13,11 @@ sans-serif;
 $headingfont : 'Merriweather',
 serif;
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
-    
+
 
 }
 
@@ -25,8 +25,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: $secondCol;
-   
+
 }
+
 
 a {
     cursor: pointer;
@@ -60,10 +61,10 @@ p {
     font-family: $mainfont;
     font-size: 20px;
     line-height: 1.8;
-    
+
 }
 
-button{
+button {
     background-color: $primaryCol;
     background-image: linear-gradient(to bottom, $primaryCol, #e28f12, #eaa122, #f2b231, #f9c440);
     color: $secondCol;
@@ -74,13 +75,19 @@ button{
     text-decoration: none;
     text-align: center;
     padding: 15px 32px;
-    
+
 
 }
+
 img {
     width: 400px;
-    height:auto;
+    height: auto;
     margin: 100px;
+
+}
+
+hr{
+    width: 20%;
     
 }
 
@@ -129,198 +136,231 @@ img {
     background-color: $secondCol;
 }
 
+/*tjenester*/
 
-/*portfolio*/
+#tjenester{
+    height: 60vh;
+    margin:5%  10%;
+}
 
-#portfolio {
-    height: fit-content;
-    margin: 5% 10% 10%;
-    border-radius: 10px;
+#tjenester h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.col{
+    background-color: #faebd8;
+    height: 300px;
 
 }
-#portfolio h2{
-    text-align: center;
-    padding-top: 30px;
-    }
-    #portfolio p{
-    margin: 4% 5%;
-    }
-    .card_container{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-left: 7rem;
-    padding-right: 7rem;
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 30px;
-    align-content: stretch;
-    justify-content: center;
-    align-items: end;
-    }
-    .card{
-    display: flex;
-    background-color: #fff;
-    height: 400px;
-    border-radius: 20px;
-    box-shadow: 2px 5px 8px 0px rgba(0,0,0,0.49);
-    -webkit-box-shadow: 2px 5px 8px 0px rgba(0,0,0,0.49);
-    -moz-box-shadow: 2px 5px 8px 0px rgba(0,0,0,0.49);
-        }
-    
-    .card_heading{
-    font-family: 'Merriweather', serif;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 15px;
-    }
-    .card_content{
-    margin: 15px 10px;
-    text-align: center;
-    }
-    .portfolio{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        
-    }
-    .portfolio:hover{
-        transform: scale(1.2);
-    }
-    .portfolio a{
-        text-decoration: none;
-        font-size: 20px;
-        color: $primaryCol;
-    }
-    .portfolio-container{
-        display: flex;
-        flex-direction: column;
 
-    }
-    
-    /*om*/
-    
-    #om{
+
+
+/*om*/
+
+#om {
     height: auto;
     background-color: #fff;
     margin: 0 10%;
-    }
-    
-    #om h2{
+}
+
+#om h2 {
     text-align: center;
     padding-top: 30px;
-    }
-    #om p{
+}
+
+#om p {
     margin: 4% 5%;
-    }
-    
-    /*kontakt*/
-    
-    #kontakt{
+}
+
+/*kontakt*/
+
+#kontakt {
     text-align: center;
     height: auto;
     margin: 0 5%;
     margin-bottom: 5%;
     border-radius: 10px;
-    }
-    
-    #kontakt h2{
+}
+
+#kontakt h2 {
     text-align: center;
     padding-top: 30px;
-    }
-    
-    #kontakt p{
+}
+
+#kontakt p {
     margin: 4% 5%;
-    }
-    #kontakt ul{
+}
+
+#kontakt ul {
     list-style: none;
     text-align: center;
-    }
-    #kontakt li{
+}
+
+#kontakt li {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     text-align: start;
-    }
-    .kontakt_list{
+}
+
+.kontakt_list {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    }
+}
 
-    .profile_div{
-        display: flex;
-        justify-content: center;
-    }
-    .profile_img{
-        height: 300px;
-        width: 300px;
-        border-radius: 50%;
-    }
-    /* Footer*/
+.profile_div {
+    display: flex;
+    justify-content: center;
+}
 
-   
+.profile_img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* Footer*/
 
 
 
-    /*hoppende ikon*/
-    
-    .bounce {
+
+
+/*hoppende ikon*/
+
+.bounce {
     display: inline-block;
     position: relative;
     -moz-animation: bounce 0.5s infinite linear;
     -o-animation: bounce 0.5s infinite linear;
     -webkit-animation: bounce 0.5s infinite linear;
     animation: bounce 1s infinite linear;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        top: 0;
     }
-    @-webkit-keyframes bounce {
-    0% { top: 0; }
-    50% { top: -0.2em; }
-    70% { top: -0.3em; }
-    100% { top: 0; }
+
+    50% {
+        top: -0.2em;
     }
-    @-moz-keyframes bounce {
-    0% { top: 0; }
-    50% { top: -0.2em; }
-    70% { top: -0.3em; }
-    100% { top: 0; }
+
+    70% {
+        top: -0.3em;
     }
-    @-o-keyframes bounce {
-    0% { top: 0; }
-    50% { top: -0.2em; }
-    70% { top: -0.3em; }
-    100% { top: 0; }
+
+    100% {
+        top: 0;
     }
-    @-ms-keyframes bounce {
-    0% { top: 0; }
-    50% { top: -0.2em; }
-    70% { top: -0.3em; }
-    100% { top: 0; }
+}
+
+@-moz-keyframes bounce {
+    0% {
+        top: 0;
     }
-    @keyframes bounce {
-    0% { top: 0; }
-    50% { top: -0.2em; }
-    70% { top: -0.3em; }
-    100% { top: 0; }
+
+    50% {
+        top: -0.2em;
     }
-    
-    /*Til topppen knap*/
-    
-    #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-o-keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-ms-keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+/*Til topppen knap*/
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red;
+    /* Set a background color */
+    color: white;
+    /* Text color */
     opacity: 0.6;
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    }
-    #myBtn:hover {
-    background-color: rgb(126, 126, 126); /* Add a dark-grey background on hover */
-    }
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: rgb(126, 126, 126);
+    /* Add a dark-grey background on hover */
+}

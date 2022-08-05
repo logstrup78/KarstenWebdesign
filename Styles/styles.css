@@ -68,6 +68,10 @@ img {
   margin: 100px;
 }
 
+hr {
+  width: 20%;
+}
+
 .headline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,100 +148,20 @@ img {
   background-color: #fffdfd;
 }
 
-/*portfolio*/
-#portfolio {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 5% 10% 10%;
-  border-radius: 10px;
+/*tjenester*/
+#tjenester {
+  height: 60vh;
+  margin: 5%  10%;
 }
 
-#portfolio h2 {
+#tjenester h2 {
   text-align: center;
-  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
-#portfolio p {
-  margin: 4% 5%;
-}
-
-.card_container {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding-left: 7rem;
-  padding-right: 7rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 30px;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-}
-
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #fff;
-  height: 400px;
-  border-radius: 20px;
-  box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.49);
-  -webkit-box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.49);
-  -moz-box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.49);
-}
-
-.card_heading {
-  font-family: 'Merriweather', serif;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 15px;
-}
-
-.card_content {
-  margin: 15px 10px;
-  text-align: center;
-}
-
-.portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.portfolio:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.portfolio a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #d97d0d;
-}
-
-.portfolio-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.col {
+  background-color: #faebd8;
+  height: 300px;
 }
 
 /*om*/
