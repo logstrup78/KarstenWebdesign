@@ -194,8 +194,8 @@ img {
 
 /*tjenester*/
 #tjenester {
-  height: 80vh;
-  margin: 0% 10%;
+  height: auto;
+  margin: 0% 10% 10%;
 }
 
 #tjenester h2 {
