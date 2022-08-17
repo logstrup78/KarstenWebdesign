@@ -12,39 +12,77 @@ body {
 
 a {
   cursor: pointer;
-  color: #d97d0d;
+  color: #636da8;
   text-decoration: none;
 }
 
 .h1_span {
-  color: #d97d0d;
+  color: #a1d929;
 }
 
 h1 {
   font-size: calc(2.07vw + 40.25px);
   padding-bottom: 30px;
+  color: #636da8;
 }
 
 h2 {
   font-family: "Merriweather", serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2em;
   margin-bottom: 20px;
+  color: #636da8;
 }
 
 h3 {
-  color: #d97d0d;
+  color: #636da8;
+  font-family: "Merriweather", serif;
+}
+
+h4 {
+  font-family: "Merriweather", serif;
+  font-size: 1.6em;
+  font-weight: bolder;
+  color: #636da8;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  color: #555;
+  font-size: 1.1em;
   line-height: 1.8;
 }
 
 button {
-  background-color: #d97d0d;
-  background-image: linear-gradient(to bottom, #d97d0d, #e28f12, #eaa122, #f2b231, #f9c440);
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 0 15px;
+  border-radius: 4px;
+  color: #636da8;
+  background: transparent;
+  line-height: 1.15;
+  font-size: 14px;
+  height: 36px;
+  word-spacing: 0px;
+  letter-spacing: 0.0892857143em;
+  text-decoration: none;
+  text-transform: uppercase;
+  min-width: 64px;
+  border: 1px solid #636da8;
+  text-align: center;
+  transition: background 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button :hover {
+  background: #f4f4f4;
+}
+
+.top-button {
+  background-color: #636da8;
+  background-image: linear-gradient(to bottom, #636da8, #e28f12, #eaa122, #f2b231, #f9c440);
   color: #fffdfd;
   border-radius: 17px;
   box-shadow: 0px 1px 4px -2px #333;
@@ -58,11 +96,7 @@ button {
 img {
   width: 400px;
   height: auto;
-  margin: 100px;
-}
-
-hr {
-  width: 20%;
+  margin: 50px;
 }
 
 .headline {
@@ -84,7 +118,7 @@ hr {
 .bi {
   font-size: 75px;
   animation: more_icon 2s;
-  color: #d97d0d;
+  color: #555;
 }
 
 @keyframes more_icon {
@@ -98,34 +132,64 @@ hr {
     transform: translateY(-12px);
   }
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 /*Hjem*/
 #hjem {
-  height: 80vh;
+  height: auto;
   margin: 0 10%;
   background-color: #fffdfd;
 }
 
 /*tjenester*/
 #tjenester {
-  height: 60vh;
-  margin: 5% 10%;
+  height: 80vh;
+  margin: 0% 10%;
 }
 
 #tjenester h2 {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 4em;
 }
 
-.col {
-  background-color: #faebd8;
-  height: 300px;
+#tjenester h4 {
+  padding-bottom: 0.8em;
+}
+
+#tjenester p {
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+#tjenster button {
+  width: 30px;
+  padding-bottom: 1em;
+}
+
+.card {
+  border: none;
+  border-radius: 3%;
+  height: auto;
+  width: 400px;
+  overflow: auto;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 20px 40px 0px;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
 }
 
 /*om*/
 #om {
   height: auto;
   background-color: #fff;
-  margin: 0 10%;
+  margin: 5% 10%;
 }
 
 #om h2 {
@@ -179,9 +243,10 @@ hr {
 }
 
 .profile_img {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
+  filter: drop-shadow(0 0 0.75rem grey);
 }
 
 /* Footer*/

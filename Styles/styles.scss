@@ -1,9 +1,10 @@
 //colors
 
-$primaryCol : #d97d0d;
+$primaryCol : #636da8;
 $secondCol : rgb(255, 253, 253);
 $thirdCol : rgb(238, 238, 238);
 $fourthCol : rgb(161, 217, 41);
+$fontcolor : #555;
 $opacity : 0.3;
 
 //fonts
@@ -36,35 +37,79 @@ a {
 }
 
 .h1_span {
-    color: $primaryCol;
+    color: $fourthCol;
 
 }
 
 h1 {
     font-size: calc(2.07vw + 40.25px);
     padding-bottom: 30px;
+     color: $primaryCol;
 }
 
 h2 {
     font-family: $headingfont;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2em;
     margin-bottom: 20px;
+     color: $primaryCol;
 
 }
 
 h3 {
     color: $primaryCol;
+    font-family: $headingfont;
+}
+
+h4 {
+    font-family: $headingfont;
+    font-size: 1.6em;
+    font-weight: bolder;
+    color: $primaryCol;
 }
 
 p {
     font-family: $mainfont;
-    font-size: 20px;
+    color: $fontcolor;
+    font-size: 1.1em;
     line-height: 1.8;
 
 }
 
 button {
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 0 15px;
+    border-radius: 4px;
+    color: $primaryCol;
+    background: transparent;
+    line-height: 1.15;
+    font-size: 14px;
+    height: 36px;
+    word-spacing: 0px;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-width: 64px;
+    border: 1px solid $primaryCol;
+    text-align: center;
+    transition: background 280ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+}
+
+button :hover {
+    background: #f4f4f4;
+}
+
+
+
+.top-button {
     background-color: $primaryCol;
     background-image: linear-gradient(to bottom, $primaryCol, #e28f12, #eaa122, #f2b231, #f9c440);
     color: $secondCol;
@@ -75,21 +120,15 @@ button {
     text-decoration: none;
     text-align: center;
     padding: 15px 32px;
-
-
 }
 
 img {
     width: 400px;
     height: auto;
-    margin: 100px;
+    margin: 50px;
 
 }
 
-hr{
-    width: 20%;
-    
-}
 
 .headline {
     display: flex;
@@ -110,7 +149,7 @@ hr{
 .bi {
     font-size: 75px;
     animation: more_icon 2s;
-    color: $primaryCol;
+    color: $fontcolor;
 
 }
 
@@ -128,40 +167,71 @@ hr{
     }
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 /*Hjem*/
 
 #hjem {
-    height: 80vh;
+    height: auto;
     margin: 0 10%;
     background-color: $secondCol;
 }
 
+
+
 /*tjenester*/
 
-#tjenester{
-    height: 60vh;
-    margin:5%  10%;
+#tjenester {
+    height: 80vh;
+    margin: 0% 10%;
 }
 
 #tjenester h2 {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 4em;
 }
 
-.col{
-    background-color: #faebd8;
-    height: 300px;
+#tjenester h4 {
+    padding-bottom: 0.8em;
+}
+
+#tjenester p {
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
+#tjenster button {
+    width: 30px;
+    padding-bottom: 1em;
+}
+
+.card {
+    
+    border: none;
+    border-radius: 3%;
+    height: auto;
+    width: 400px;
+    overflow: auto;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 20px 40px 0px;
 
 }
 
-
+.card:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
 
 /*om*/
 
 #om {
     height: auto;
     background-color: #fff;
-    margin: 0 10%;
+    margin: 5% 10%;
 }
 
 #om h2 {
@@ -213,12 +283,15 @@ hr{
 .profile_div {
     display: flex;
     justify-content: center;
+    
+
 }
 
 .profile_img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
+    filter: drop-shadow(0 0 0.75rem grey);
 }
 
 /* Footer*/
