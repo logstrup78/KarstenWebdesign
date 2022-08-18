@@ -1,439 +1,418 @@
 //colors
 
-$primaryCol : #636da8;
-$secondCol : rgb(255, 253, 253);
-$thirdCol : rgb(238, 238, 238);
-$fourthCol : rgb(161, 217, 41);
-$fontcolor : #555;
-$opacity : 0.3;
+$primaryCol: #636da8;
+$secondCol: rgb(255, 253, 253);
+$thirdCol: rgb(238, 238, 238);
+$fourthCol: rgb(161, 217, 41);
+$fontcolor: #555;
+$opacity: 0.3;
 
 //fonts
 
-$mainfont : 'Open Sans',
-sans-serif;
-$headingfont : 'Merriweather',
-serif;
+$mainfont: "Open Sans", sans-serif;
+$headingfont: "Merriweather", serif;
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-
-
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    background-color: $secondCol;
-
+  display: flex;
+  flex-direction: column;
+  background-color: $secondCol;
 }
 
-
 a {
-    cursor: pointer;
-    color: $primaryCol;
-    text-decoration: none;
+  cursor: pointer;
+  color: $primaryCol;
+  text-decoration: none;
 }
 
 .h1_span {
-    color: $fourthCol;
-
+  color: $fourthCol;
 }
 
 h1 {
-    font-size: calc(2.07vw + 40.25px);
-    padding-bottom: 30px;
-     color: $primaryCol;
+  font-size: calc(2.07vw + 40.25px);
+  padding-bottom: 30px;
+  color: $primaryCol;
 }
 
 h2 {
-    font-family: $headingfont;
-    font-weight: 700;
-    font-size: 2em;
-    margin-bottom: 20px;
-     color: $primaryCol;
-
+  font-family: $headingfont;
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: $primaryCol;
 }
 
 h3 {
-    color: $primaryCol;
-    font-family: $headingfont;
+  color: $primaryCol;
+  font-family: $headingfont;
 }
 
 h4 {
-    font-family: $headingfont;
-    font-size: 1.6em;
-    font-weight: bolder;
-    color: $primaryCol;
+  font-family: $headingfont;
+  font-size: 1.6em;
+  font-weight: bolder;
+  color: $primaryCol;
 }
 
 p {
-    font-family: $mainfont;
-    color: $fontcolor;
-    font-size: 1.1em;
-    line-height: 1.8;
-
+  font-family: $mainfont;
+  color: $fontcolor;
+  font-size: 1.1em;
+  line-height: 1.8;
 }
 
 button {
-
-    display: inline-block;
-    outline: none;
-    cursor: pointer;
-    font-weight: 500;
-    border-radius: 3px;
-    padding: 0 15px;
-    border-radius: 4px;
-    color: $primaryCol;
-    background: transparent;
-    line-height: 1.15;
-    font-size: 14px;
-    height: 36px;
-    word-spacing: 0px;
-    letter-spacing: .0892857143em;
-    text-decoration: none;
-    text-transform: uppercase;
-    min-width: 64px;
-    border: 1px solid $primaryCol;
-    text-align: center;
-    transition: background 280ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 0 15px;
+  border-radius: 4px;
+  color: $primaryCol;
+  background: transparent;
+  line-height: 1.15;
+  font-size: 14px;
+  height: 36px;
+  word-spacing: 0px;
+  letter-spacing: 0.0892857143em;
+  text-decoration: none;
+  text-transform: uppercase;
+  min-width: 64px;
+  border: 1px solid $primaryCol;
+  text-align: center;
+  transition: background 280ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button :hover {
-    background: #f4f4f4;
+  background: #f4f4f4;
 }
 
-
-
 .top-button {
-    background-color: $primaryCol;
-    background-image: linear-gradient(to bottom, $primaryCol, #e28f12, #eaa122, #f2b231, #f9c440);
-    color: $secondCol;
-    border-radius: 17px;
-    box-shadow: 0px 1px 4px -2px #333;
-    border-style: none;
-    font-size: 16px;
-    text-decoration: none;
-    text-align: center;
-    padding: 15px 32px;
+  background-color: $primaryCol;
+  background-image: linear-gradient(
+    to bottom,
+    $primaryCol,
+    #e28f12,
+    #eaa122,
+    #f2b231,
+    #f9c440
+  );
+  color: $secondCol;
+  border-radius: 17px;
+  box-shadow: 0px 1px 4px -2px #333;
+  border-style: none;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 32px;
 }
 
 img {
-    width: 400px;
-    height: auto;
-    margin: 50px;
-
+  width: 400px;
+  height: auto;
+  margin: 50px;
 }
 
-
 .headline {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
 }
 
 .more_icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100px;
-    margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  margin-top: 10%;
 }
 
 .bi {
-    font-size: 75px;
-    animation: more_icon 2s;
-    color: $fontcolor;
-
+  font-size: 75px;
+  animation: more_icon 2s;
+  color: $fontcolor;
 }
 
 @keyframes more_icon {
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 
-    40% {
-        transform: translateY(-20px);
-    }
+  40% {
+    transform: translateY(-20px);
+  }
 
-    60% {
-        transform: translateY(-12px);
-    }
+  60% {
+    transform: translateY(-12px);
+  }
 }
 
-.container{
-    display: flex;
-    justify-content: center;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
 /*Hjem*/
 
 #hjem {
-    height: auto;
-    margin: 0 10%;
-    background-color: $secondCol;
+  height: auto;
+  margin: 0 10%;
+  background-color: $secondCol;
 }
-
-
 
 /*tjenester*/
 
 #tjenester {
-    height: auto;
-    margin: 0% 10% 10%;
+  height: auto;
+  margin: 0% 10% 10%;
 }
 
 #tjenester h2 {
-    text-align: center;
-    padding-bottom: 4em;
+  text-align: center;
+  padding-bottom: 4em;
 }
 
 #tjenester h4 {
-    padding-bottom: 0.8em;
+  padding-bottom: 0.8em;
 }
 
 #tjenester p {
-    font-size: 1em;
-    padding-bottom: 1em;
+  font-size: 1em;
+  padding-bottom: 1em;
 }
 
 #tjenster button {
-    width: 30px;
-    padding-bottom: 1em;
+  width: 30px;
+  padding-bottom: 1em;
 }
 
 .card {
-
-    border: none;
-    border-radius: 3%;
-    height: auto;
-    width: 400px;
-    overflow: auto;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 20px 40px 0px;
-
+  border: none;
+  border-radius: 3%;
+  height: auto;
+  width: 400px;
+  overflow: auto;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 20px 40px 0px;
 }
 
 .card:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 1s ease;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
 }
 
 /*om*/
 
 #om {
-    height: auto;
-    background-color: #fff;
-    margin: 5% 10%;
+  height: auto;
+  background-color: #fff;
+  margin: 5% 10%;
 }
 
 #om h2 {
-    text-align: center;
-    padding-top: 30px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 #om p {
-    margin: 4% 5%;
+  margin: 4% 5%;
 }
 
 /*kontakt*/
 
 #kontakt {
-    text-align: center;
-    height: auto;
-    margin: 0 5%;
-    margin-bottom: 5%;
-    border-radius: 10px;
+  text-align: center;
+  height: auto;
+  margin: 0 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
 }
 
 #kontakt h2 {
-    text-align: center;
-    padding-top: 30px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 #kontakt p {
-    margin: 4% 5%;
+  margin: 4% 5%;
 }
 
 #kontakt ul {
-    list-style: none;
-    text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 #kontakt li {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
-    text-align: start;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  text-align: start;
 }
 
 .kontakt_list {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .profile_div {
-    display: flex;
-    justify-content: center;
-    
-
+  display: flex;
+  justify-content: center;
 }
 
 .profile_img {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 0.75rem grey);
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.75rem grey);
 }
 
 /* Footer*/
 
-
-
-
-
 /*hoppende ikon*/
 
 .bounce {
-    display: inline-block;
-    position: relative;
-    -moz-animation: bounce 0.5s infinite linear;
-    -o-animation: bounce 0.5s infinite linear;
-    -webkit-animation: bounce 0.5s infinite linear;
-    animation: bounce 1s infinite linear;
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
+  -webkit-animation: bounce 0.5s infinite linear;
+  animation: bounce 1s infinite linear;
 }
 
 @-webkit-keyframes bounce {
-    0% {
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
 
-    50% {
-        top: -0.2em;
-    }
+  50% {
+    top: -0.2em;
+  }
 
-    70% {
-        top: -0.3em;
-    }
+  70% {
+    top: -0.3em;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
 @-moz-keyframes bounce {
-    0% {
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
 
-    50% {
-        top: -0.2em;
-    }
+  50% {
+    top: -0.2em;
+  }
 
-    70% {
-        top: -0.3em;
-    }
+  70% {
+    top: -0.3em;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
 @-o-keyframes bounce {
-    0% {
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
 
-    50% {
-        top: -0.2em;
-    }
+  50% {
+    top: -0.2em;
+  }
 
-    70% {
-        top: -0.3em;
-    }
+  70% {
+    top: -0.3em;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
 @-ms-keyframes bounce {
-    0% {
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
 
-    50% {
-        top: -0.2em;
-    }
+  50% {
+    top: -0.2em;
+  }
 
-    70% {
-        top: -0.3em;
-    }
+  70% {
+    top: -0.3em;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
 @keyframes bounce {
-    0% {
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
 
-    50% {
-        top: -0.2em;
-    }
+  50% {
+    top: -0.2em;
+  }
 
-    70% {
-        top: -0.3em;
-    }
+  70% {
+    top: -0.3em;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
 /*Til topppen knap*/
 
 #myBtn {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: red;
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    opacity: 0.6;
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Some padding */
-    border-radius: 10px;
-    /* Rounded corners */
-    font-size: 18px;
-    /* Increase font size */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: red;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  opacity: 0.6;
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
 }
 
 #myBtn:hover {
-    background-color: rgb(126, 126, 126);
-    /* Add a dark-grey background on hover */
+  background-color: rgb(126, 126, 126);
+  /* Add a dark-grey background on hover */
 }
